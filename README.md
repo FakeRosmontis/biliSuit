@@ -1,4 +1,6 @@
 # Attention
+**由于未知原因，暂时无法解决 69949/261XX 类型的错误**
+
 **This code is like shit, please don't try to understand it.**
 
 **Use this project will probably ruslt in your account is banned.**  
@@ -32,6 +34,7 @@ Then run `python main.py` to start purchase.
   "sdkVersion": "",
   "session_id": "",
   "time_before": 0,
+  "x-bili-aurora-eid": "",
   "cookies": ""
 }
 ```
@@ -57,6 +60,7 @@ Then run `python main.py` to start purchase.
 |    sdkVersion     |        1.4.5        |                                      Can be found in bili wallet page.                                      | `https://pay.bilibili.com/` |
 |    session_id     |    [session_id]     |        Can be found in bili wallet page.<br/>`None` for auto generate.<br/>Recommend to use `None`.         | `https://pay.bilibili.com/` |
 |    time_before    |      [0 ~ 999]      |                          Time to buy in advance, unit: `ms`.<br/>Maximum `999` ms.                          |                             |
+|x-bili-aurora-eid|[x-bili-aurora-eid]|Can be found in headers.||
 |      cookies      |      [cookies]      |                                       Can be found in mostly headers.                                       | `https://api.bilibili.com/` |
 
 ### cookies
@@ -86,6 +90,7 @@ SESSDATA=; bili_jct=; DedeUserID=; DedeUserID__ckMd5=; sid=; Buvid=
   "sdkVersion": "1.4.9",
   "session_id": "",
   "time_before": 810,
+  "x-bili-aurora-eid": "XXX==",
   "cookies": "SESSDATA=XXX; bili_jct=XXX; DedeUserID=1; DedeUserID__ckMd5=XXX; sid=XXX; Buvid=XXX"
 }
 ```
